@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='SCCN_Carbon_Emission_DA'

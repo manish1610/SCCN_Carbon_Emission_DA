@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/green_100"
+    android:layout_height="match_parent"
+    tools:context=".Legend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/direct"
+                android:layout_height="200dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:text="Scope 1"
+              android:layout_gravity="center"
+              android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+              android:textStyle="bold"
+              android:textColor="@android:color/black"
+              app:fontFamily="sans-serif-light"
+              android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Direct GHG Emsissions"
+                android:textColor="@android:color/black"
+                app:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:layout_gravity="center"
+                android:text="• Includes emissions that occur from sources owned or controlled by university  \n\n • Emissions from combustion in owned or controlled boilers, furnaces etc \n\n • Emissions from chemical production in owned or controlled process equipment \n\n • Direct CO2 emissions from the combustion of biomass shall  not be included in scope 1 but reported separatelys"
+                android:textColor="@android:color/black"
+                app:fontFamily="sans-serif-light"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:src="@drawable/electricity"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Scope 2"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="ELectricity GHG Emsissions"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_gravity="center"
+                    android:text="Scope 2 accounts for GHG emissions from generation of purchased electricity consumed by a company. Purchased electricity is defined as electricity that is purchased or otherwise brought into the organizational boundary of the company. SCope 2 emissions physically occur at the facility where electricity is generated. "
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/darker_gray"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/indirect"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Scope 3"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Indirect GHG Emsissions"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_gravity="center"
+                    android:text="Scope 3 is an optional reporting category that allows for the treatment of all other indirect emissions. Scope 3 emissions are a consequence of the activities of the company , but occur from the sources not owned or controlled by the company . Some examples of the scope 3 activities are extraction and production of purchased materials,transportation of purchased fuels."
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+</ScrollView>
